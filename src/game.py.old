@@ -1,0 +1,22 @@
+#import direct.directbase.DirectStart #starts panda
+#from pandac.PandaModules import * #basic Panda modules
+#from direct.showbase.DirectObject import DirectObject #for event handling
+#from direct.actor.Actor import Actor #for animated models
+from direct.interval.IntervalGlobal import * #for compound intervals
+from direct.task import Task #for update functions
+import math, sys, random
+
+# singleton class game
+class Game(object):
+    #import direct.directbase.DirectStart #starts panda
+    p_start = __import__('direct.directbase.DirectStart', globals(), locals(), [], -1)
+    #from pandac.PandaModules import * #basic Panda modules
+    p_mods = __import__('pandac.PandaModules', globals(), locals(), [], -1)
+    #from pandac.PandaModules import * #basic Panda modules
+    _temp = __import__('direct.showbase.DirectObject', globals(), locals(), ['DirectObject'], -1)
+    p_dirobj = _temp.DirectObject
+    _temp = __import__('direct.actor.Actor', globals(), locals(), ['Actor'], -1)
+    p_actor = _temp.Actor
+    p_intglobal = __import__('direct.interval.IntervalGlobal', globals(),locals(), [], -1)
+    
+    

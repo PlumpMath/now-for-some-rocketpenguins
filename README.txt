@@ -1,0 +1,1 @@
+To run, run python src/p3dbasics.py.  Assets, including particle effect config and models found in the assets folder.
